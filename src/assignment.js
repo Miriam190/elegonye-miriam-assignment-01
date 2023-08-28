@@ -21,6 +21,8 @@ for(let i = 0; i <= destination; i++){
     sum += i
 }
 
+
+
 // sum = destination.reduce((previousValue,currentValue)
 
 return sum
