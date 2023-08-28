@@ -15,12 +15,19 @@ const assignment = {};
  * @returns number the sum of the numbers from 1 to destination
  */
 function sumOfNumbersTo(destination) {
-    let sum = 0;
-    return sum
+let sum =0;
+
+for(let i = 0; i <= destination; i++){
+    sum += i
+}
+
+// sum = destination.reduce((previousValue,currentValue)
+
+return sum
 }
 
 
-// assignment.sumOfNumbersTo = sumOfNumbersTo;
+assignment.sumOfNumbersTo = sumOfNumbersTo;
 
 /**
  * Challenge - 2
@@ -33,11 +40,18 @@ function sumOfNumbersTo(destination) {
  * @returns the object containing count, sum, arrayOfEvenNumbers from 1 to destination
  */
 function countEvenNumbersWithin(destination) {
-    // Write your code here
-    // get the number from 1 to destination
     let sum = 0;
     let count = 0;
     let arrayOfEvenNumbers = [];
+
+    for (let i = 1; i <=10;
+         i++) {
+            if (i % 2 === 0) {
+                arrayOfEvenNumbers.push(i);
+                count++;
+                sum += i;
+            }
+    }
 
     return {
         // property value shorthand
@@ -49,7 +63,7 @@ function countEvenNumbersWithin(destination) {
     };
 }
 
-// assignment.countEvenNumbersWithin = countEvenNumbersWithin;
+assignment.countEvenNumbersWithin = countEvenNumbersWithin;
 
 /**
  * Challenge - 3
