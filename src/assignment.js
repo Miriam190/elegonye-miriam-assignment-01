@@ -25,8 +25,6 @@ for(let i = 0; i <= destination; i++){
 
 return sum
 }
-
-
 assignment.sumOfNumbersTo = sumOfNumbersTo;
 
 /**
